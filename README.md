@@ -73,9 +73,15 @@ cp .env.example .env
 - `ANTHROPIC_API_KEY`
 - `ERP_1C_BASE_URL`
 
-### 4. Запуск бота
+### 4. Запуск бота локально
 ```bash
 python main.py
+```
+
+### 5. Запуск через Docker Compose (Production)
+```bash
+docker compose up --build -d
+docker compose logs -f
 ```
 
 ---
